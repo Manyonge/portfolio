@@ -167,7 +167,8 @@ export default function CaseStudyPage() {
       <div className="container py-20 text-center">
         <h1 className="text-3xl font-bold mb-4">Case Study Not Found</h1>
         <p className="text-muted-foreground mb-8">
-          The case study you're looking for doesn't exist or has been removed.
+          The case study you&apos;re looking for doesn&apos;t exist or has been
+          removed.
         </p>
         <Button asChild>
           <Link href="/case-studies">

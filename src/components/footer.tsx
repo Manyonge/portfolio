@@ -7,8 +7,6 @@ import Link from "next/link";
 import { Github, Linkedin, Twitter } from "./svg";
 import { Container } from "./ui/container";
 export function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="w-full border-t bg-background py-8">
       <Container className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">

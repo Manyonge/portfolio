@@ -598,8 +598,8 @@ export default function BlogPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">No articles found</h3>
               <p className="text-muted-foreground max-w-md mb-6">
-                We couldn't find any articles that match your search criteria.
-                Try adjusting your filters.
+                We couldn&apos;t find any articles that match your search
+                criteria. Try adjusting your filters.
               </p>
               <Button
                 onClick={() => {

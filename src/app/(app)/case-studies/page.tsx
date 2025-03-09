@@ -245,8 +245,8 @@ export default function CaseStudiesPage() {
               Case Studies
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Explore my projects and the solutions I've built for real-world
-              problems.
+              Explore my projects and the solutions I&apos;ve built for
+              real-world problems.
             </p>
           </motion.div>
 
@@ -498,7 +498,7 @@ export default function CaseStudiesPage() {
                 No case studies found
               </h3>
               <p className="text-muted-foreground max-w-md mb-6">
-                We couldn't find any case studies that match your search
+                We couldn&apos;t find any case studies that match your search
                 criteria. Try adjusting your filters.
               </p>
               <Button

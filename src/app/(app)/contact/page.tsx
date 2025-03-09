@@ -90,8 +90,8 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              I'd love to hear from you! Whether you have a project in mind or
-              just want to say hello.
+              I&apos;d love to hear from you! Whether you have a project in mind
+              or just want to say hello.
             </p>
           </motion.div>
         </Container>
@@ -251,7 +251,7 @@ export default function ContactPage() {
               <Separator />
 
               <div>
-                <h2 className="text-xl font-bold mb-4">Let's Connect</h2>
+                <h2 className="text-xl font-bold mb-4">Let&apos;s Connect</h2>
                 <p className="text-muted-foreground mb-4">
                   Follow me on social media for updates on my latest projects
                   and articles.
@@ -360,8 +360,8 @@ export default function ContactPage() {
               <p className="text-muted-foreground">
                 Project timelines vary based on complexity and scope. A simple
                 website might take 2-4 weeks, while a complex web application
-                could take 2-3 months or more. I'll provide a detailed timeline
-                during the proposal phase.
+                could take 2-3 months or more. I&apos;ll provide a detailed
+                timeline during the proposal phase.
               </p>
             </motion.div>
 

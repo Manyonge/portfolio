@@ -342,7 +342,8 @@ export default function BlogPostPage() {
       <div className="container py-20 text-center">
         <h1 className="text-3xl font-bold mb-4">Article Not Found</h1>
         <p className="text-muted-foreground mb-8">
-          The article you're looking for doesn't exist or has been removed.
+          The article you&apos;re looking for doesn&apos;t exist or has been
+          removed.
         </p>
         <Button asChild>
           <Link href="/blog">

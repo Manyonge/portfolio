@@ -143,8 +143,8 @@ export default function Home() {
                   <span className="text-primary">experiences</span> that matter
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  I'm a software developer specializing in building exceptional
-                  digital experiences with modern technologies.
+                  I&apos;m a software developer specializing in building
+                  exceptional digital experiences with modern technologies.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 mt-2">
@@ -348,11 +348,11 @@ export default function Home() {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-              Let's work together
+              Let&apos;s work together
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Have a project in mind? Let's discuss how I can help bring your
-              ideas to life.
+              Have a project in mind? Let&apos;s discuss how I can help bring
+              your ideas to life.
             </p>
             <Button size="lg" asChild>
               <Link href="/contact">Get in touch</Link>
