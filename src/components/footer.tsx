@@ -1,19 +1,11 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import {
-  Briefcase,
-  FileText,
-  Github,
-  Home,
-  Linkedin,
-  Mail,
-  Twitter,
-} from "lucide-react";
+import { mySocialLinks } from "@/lib";
+import { Briefcase, FileText, Home, Mail } from "lucide-react";
 import Link from "next/link";
+import { Github, Linkedin, Twitter } from "./svg";
 import { Container } from "./ui/container";
-
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -21,39 +13,39 @@ export function Footer() {
     <footer className="w-full border-t bg-background py-8">
       <Container className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">DevPortfolio</h3>
+          <h3 className="font-bold text-lg">Arthur Manyonge</h3>
           <p className="text-muted-foreground">
             Building digital experiences with creativity and precision.
           </p>
           <div className="flex items-center gap-2 mt-2">
             <Button size="icon" variant="ghost" asChild>
               <Link
-                href="https://github.com"
+                href={mySocialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
-                <Github className="h-4 w-4" />
+                <Github />
               </Link>
             </Button>
             <Button size="icon" variant="ghost" asChild>
               <Link
-                href="https://twitter.com"
+                href={mySocialLinks.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
               >
-                <Twitter className="h-4 w-4" />
+                <Twitter />
               </Link>
             </Button>
             <Button size="icon" variant="ghost" asChild>
               <Link
-                href="https://linkedin.com"
+                href={mySocialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-4 w-4" />
+                <Linkedin />
               </Link>
             </Button>
           </div>
@@ -156,20 +148,6 @@ export function Footer() {
               </Link>
             </li>
           </ul>
-        </div>
-      </Container>
-      <Separator className="my-8" />
-      <Container className="flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-sm text-muted-foreground">
-          © {currentYear} DevPortfolio. All rights reserved.
-        </p>
-        <div className="flex gap-4 text-sm text-muted-foreground">
-          <Link href="/privacy" className="hover:text-foreground">
-            Privacy
-          </Link>
-          <Link href="/terms" className="hover:text-foreground">
-            Terms
-          </Link>
         </div>
       </Container>
     </footer>
