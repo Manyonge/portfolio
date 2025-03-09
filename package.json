@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload",
     "prettier": "bunx prettier --write $(git diff --name-only --diff-filter=ACM)",
     "prettier:all": "bunx prettier --write ."
   },
