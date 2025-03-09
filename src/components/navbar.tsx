@@ -21,6 +21,7 @@ import { Briefcase, FileText, Home, Mail, Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
+import { Container } from "./ui/container";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -48,7 +49,7 @@ export function Navbar() {
           : "bg-transparent",
       )}
     >
-      <div className="container flex h-16 items-center justify-between">
+      <Container className="flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           {/* Placeholder for logo */}
           <Link href="/" className="font-bold text-xl">
@@ -177,7 +178,7 @@ export function Navbar() {
             </SheetContent>
           </Sheet>
         </div>
-      </div>
+      </Container>
     </header>
   );
 }

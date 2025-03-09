@@ -10,6 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Container } from "@/components/ui/container";
 import { Input } from "@/components/ui/input";
 import {
   Pagination,
@@ -311,7 +312,7 @@ export default function BlogPage() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="py-16 md:py-20 bg-muted/30">
-        <div className="container">
+        <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -427,12 +428,12 @@ export default function BlogPage() {
               </SheetContent>
             </Sheet>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Blog Posts Grid */}
       <section className="py-16">
-        <div className="container">
+        <Container>
           {paginatedBlogPosts.length > 0 ? (
             <>
               <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -613,7 +614,7 @@ export default function BlogPage() {
               </Button>
             </div>
           )}
-        </div>
+        </Container>
       </section>
     </div>
   );

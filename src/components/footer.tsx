@@ -12,13 +12,14 @@ import {
   Twitter,
 } from "lucide-react";
 import Link from "next/link";
+import { Container } from "./ui/container";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="w-full border-t bg-background py-8">
-      <div className="container grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <Container className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">DevPortfolio</h3>
           <p className="text-muted-foreground">
@@ -156,9 +157,9 @@ export function Footer() {
             </li>
           </ul>
         </div>
-      </div>
+      </Container>
       <Separator className="my-8" />
-      <div className="container flex flex-col md:flex-row justify-between items-center gap-4">
+      <Container className="flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm text-muted-foreground">
           © {currentYear} DevPortfolio. All rights reserved.
         </p>
@@ -170,7 +171,7 @@ export function Footer() {
             Terms
           </Link>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }

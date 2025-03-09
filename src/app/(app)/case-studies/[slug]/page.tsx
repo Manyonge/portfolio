@@ -2,6 +2,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Container } from "@/components/ui/container";
 import { Separator } from "@/components/ui/separator";
 import { motion } from "framer-motion";
 import {
@@ -182,7 +183,7 @@ export default function CaseStudyPage() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="py-16 md:py-20 bg-muted/30">
-        <div className="container">
+        <Container>
           <div className="mb-8">
             <Button variant="ghost" asChild className="mb-6 -ml-3">
               <Link href="/case-studies" className="flex items-center">
@@ -213,12 +214,12 @@ export default function CaseStudyPage() {
               </Badge>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Image Section */}
       <section className="py-10">
-        <div className="container">
+        <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -229,12 +230,12 @@ export default function CaseStudyPage() {
               Project Screenshot
             </span>
           </motion.div>
-        </div>
+        </Container>
       </section>
 
       {/* Project Info */}
       <section className="py-10">
-        <div className="container">
+        <Container>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -341,12 +342,12 @@ export default function CaseStudyPage() {
               </ul>
             </motion.div>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Features */}
       <section className="py-10">
-        <div className="container">
+        <Container>
           <h2 className="text-2xl font-bold mb-8">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {caseStudy.features.map((feature, index) => (
@@ -364,12 +365,12 @@ export default function CaseStudyPage() {
               </motion.div>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Tech Stack */}
       <section className="py-10 bg-muted/30">
-        <div className="container">
+        <Container>
           <h2 className="text-2xl font-bold mb-8">Tech Stack</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {caseStudy.techStack.map((tech, index) => (
@@ -392,29 +393,29 @@ export default function CaseStudyPage() {
               </motion.div>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Results */}
       <section className="py-10">
-        <div className="container">
+        <Container>
           <h2 className="text-2xl font-bold mb-4">Results</h2>
           <p className="text-muted-foreground leading-relaxed max-w-3xl">
             {caseStudy.results}
           </p>
-        </div>
+        </Container>
       </section>
 
       {/* Next Project */}
       <section className="py-16 bg-muted/50">
-        <div className="container text-center">
+        <Container className="text-center">
           <h2 className="text-2xl font-bold mb-6">More Case Studies</h2>
           <div className="flex justify-center gap-4">
             <Button asChild>
               <Link href="/case-studies">View All Case Studies</Link>
             </Button>
           </div>
-        </div>
+        </Container>
       </section>
     </div>
   );

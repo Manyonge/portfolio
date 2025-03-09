@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Container } from "@/components/ui/container";
 import {
   Form,
   FormControl,
@@ -75,7 +76,7 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="py-16 md:py-20 bg-muted/30">
-        <div className="container">
+        <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -90,12 +91,12 @@ export default function ContactPage() {
               just want to say hello.
             </p>
           </motion.div>
-        </div>
+        </Container>
       </section>
 
       {/* Contact Form Section */}
       <section className="py-16">
-        <div className="container">
+        <Container>
           <div className="grid grid-cols-1 md:grid-cols-[1fr_400px] gap-10 max-w-5xl mx-auto">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -312,12 +313,12 @@ export default function ContactPage() {
               </div>
             </motion.div>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* FAQs or Additional Info */}
       <section className="py-16 bg-muted/30">
-        <div className="container">
+        <Container>
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">
               Frequently Asked Questions
@@ -396,7 +397,7 @@ export default function ContactPage() {
               </p>
             </motion.div>
           </div>
-        </div>
+        </Container>
       </section>
     </div>
   );

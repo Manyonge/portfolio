@@ -4,6 +4,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import { Container } from "@/components/ui/container";
 import {
   HoverCard,
   HoverCardContent,
@@ -369,7 +370,7 @@ export default function BlogPostPage() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="py-16 md:py-20 bg-muted/30">
-        <div className="container">
+        <Container>
           <div className="mb-8">
             <Button variant="ghost" asChild className="mb-6 -ml-3">
               <Link href="/blog" className="flex items-center">
@@ -460,12 +461,12 @@ export default function BlogPostPage() {
               </div>
             </motion.div>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Featured Image */}
       <section className="py-10">
-        <div className="container">
+        <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -476,12 +477,12 @@ export default function BlogPostPage() {
               Featured Image
             </span>
           </motion.div>
-        </div>
+        </Container>
       </section>
 
       {/* Article Content */}
       <section className="py-10">
-        <div className="container">
+        <Container>
           <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] gap-10 max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -546,13 +547,13 @@ export default function BlogPostPage() {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Related Articles */}
       {relatedPosts.length > 0 && (
         <section className="py-16 bg-muted/30">
-          <div className="container">
+          <Container>
             <h2 className="text-2xl font-bold mb-8">Related Articles</h2>
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {relatedPosts.map((relatedPost, index) => (
@@ -601,20 +602,20 @@ export default function BlogPostPage() {
                 </motion.div>
               ))}
             </div>
-          </div>
+          </Container>
         </section>
       )}
 
       {/* Next Article */}
       <section className="py-16">
-        <div className="container text-center">
+        <Container className="text-center">
           <h2 className="text-2xl font-bold mb-6">Continue Reading</h2>
           <div className="flex justify-center gap-4">
             <Button asChild>
               <Link href="/blog">View All Articles</Link>
             </Button>
           </div>
-        </div>
+        </Container>
       </section>
     </div>
   );

@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Container } from "@/components/ui/container";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -125,7 +126,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="container relative z-10">
+        <Container className="relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -168,7 +169,7 @@ export default function Home() {
               <div className="text-5xl font-bold text-primary/40">DEV</div>
             </motion.div>
           </div>
-        </div>
+        </Container>
         {/* Background decorations */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
           <div className="absolute -top-[10%] -right-[10%] w-[50%] h-[50%] bg-primary/5 rounded-full blur-3xl"></div>
@@ -178,7 +179,7 @@ export default function Home() {
 
       {/* Skills Section */}
       <section className="py-16 bg-muted/50">
-        <div className="container">
+        <Container>
           <div className="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
             {skills.map((skill, index) => (
               <motion.div
@@ -196,12 +197,12 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Featured Case Studies */}
       <section className="py-16">
-        <div className="container">
+        <Container>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
             <div>
               <h2 className="text-3xl font-bold tracking-tight mb-2">
@@ -272,12 +273,12 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Latest Blog Posts */}
       <section className="py-16 bg-muted/30">
-        <div className="container">
+        <Container>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
             <div>
               <h2 className="text-3xl font-bold tracking-tight mb-2">
@@ -333,12 +334,12 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Contact CTA */}
       <section className="py-20">
-        <div className="container">
+        <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -357,7 +358,7 @@ export default function Home() {
               <Link href="/contact">Get in touch</Link>
             </Button>
           </motion.div>
-        </div>
+        </Container>
       </section>
     </div>
   );
